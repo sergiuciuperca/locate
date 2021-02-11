@@ -1,0 +1,208 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Locate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/gray_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorControlActivated">@color/orange</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+<!--        <item name="toolbarStyle">@style/Locate.Toolbar</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="textAppearanceHeadline1">@style/Locate.Text.Title</item>
+        <item name="textAppearanceHeadline2">@style/Locate.Text.Headline2</item>
+        <item name="textAppearanceHeadline4">@style/Locate.Text.Onboarding.Desc</item>
+        <item name="textAppearanceHeadline5">@style/Locate.Text.Onboarding.Title</item>
+        <item name="textAppearanceBody1">@style/Locate.Text.Body1</item>
+        <item name="textAppearanceBody2">@style/Locate.Text.Body2</item>
+        <item name="textAppearanceSubtitle1">@style/Locate.Text.Subtitle1</item>
+        <item name="textAppearanceCaption">@style/Locate.Text.Caption</item>
+
+        <item name="materialButtonStyle">@style/Locate.Button</item>
+        <item name="textAppearanceButton">@style/Locate.Text.Button</item>
+        <item name="textInputStyle">@style/Locate.TextInput</item>
+    </style>
+
+    <style name="Theme.Locate.Home" parent="Theme.Locate">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/home_background</item>
+        <item name="android:colorBackground">@color/home_background</item>
+    </style>
+
+    <style name="Locate.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="materialThemeOverlay">@style/Locate.Toolbar.Overlay</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="navigationIcon">@drawable/ic_arrow_toolbar</item>
+        <item name="android:navigationIcon">@drawable/ic_arrow_toolbar</item>
+
+    </style>
+
+    <style name="Locate.Toolbar.Overlay" parent="">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@android:color/transparent</item>
+        <item name="navigationIcon">@drawable/ic_arrow_toolbar</item>
+        <item name="android:navigationIcon">@drawable/ic_arrow_toolbar</item>
+    </style>
+
+
+    <style name="Locate.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="cornerRadius">20dp</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+    </style>
+
+    <style name="Locate.Button.Primary" parent="Locate.Button">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Locate.Button.Secondary" parent="Locate.Button">
+        <item name="backgroundTint">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Locate.Text.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/quicksand_500</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="Locate.Text.Title" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/quicksand_700</item>
+        <item name="android:fontFamily">@font/quicksand_700</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Locate.Text.Onboarding.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/quicksand_700</item>
+        <item name="android:fontFamily">@font/quicksand_700</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/oboarding_title</item>
+    </style>
+
+    <style name="Locate.Text.Onboarding.Desc" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/quicksand_700</item>
+        <item name="android:fontFamily">@font/quicksand_700</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="Locate.Text.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/quicksand_700</item>
+        <item name="android:fontFamily">@font/quicksand_700</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Locate.Text.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/quicksand_500</item>
+        <item name="android:fontFamily">@font/quicksand_500</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Locate.Text.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/quicksand_500</item>
+        <item name="android:fontFamily">@font/quicksand_500</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Locate.Text.Label" parent="Locate.Text.Body1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="Locate.Text.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/quicksand_500</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="Locate.Text.Info" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/quicksand_400</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_small_info</item>
+    </style>
+
+    <style name="Locate.Text.Title.Home" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/quicksand_700</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Locate.Text.Button" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/quicksand_700</item>
+        <item name="android:fontFamily">@font/quicksand_700</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Locate.Button.Text.Small" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="minHeight">0dp</item>
+        <item name="android:textAppearance">@style/Locate.Text.Body1</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="Locate.Button.Text.Big" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="minHeight">0dp</item>
+        <item name="android:textAppearance">@style/Locate.Text.Button</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="Locate.TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="materialThemeOverlay">@style/Theme.InputOverlay</item>
+        <item name="boxStrokeColor">@color/input_box_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="android:height">88dp</item>
+    </style>
+
+    <style name="Theme.InputOverlay" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="colorPrimary">@color/orange</item>
+    </style>
+
+    <style name="Locate.TextInput.Home" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/input_box_color</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+    </style>
+
+
+</resources>

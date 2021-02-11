@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">locate</string>
+
+    <string name="login_service_info">Service at your fingertips</string>
+    <string name="login_service_desc">Get the job done easily!</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="login_forgot_password">Have you forgotten your password?</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail address</string>
+    <string name="forgot_tile">Forgot your password?</string>
+    <string name="forgot_desc">Confirm your email address and we will send it instructions.</string>
+    <string name="forgot_existing_user">Existing User?</string>
+    <string name="register_title">Create a new account</string>
+    <string name="register_desc">Please provide us with your details to register</string>
+    <string name="register_name">Your name</string>
+    <string name="register_password_congirm">Confirm password</string>
+    <string name="success">Success</string>
+    <string name="success_desc_reset">We have sent a link to change the password to the e-mail address provided.</string>
+    <string name="success_desc_register">Your account was created. You can go to login now.</string>
+    <string name="onboarding_login">Login to your account</string>
+    <string name="onboarding">Onboarding</string>
+    <string name="reset_password">Reset password</string>
+    <string name="login_invalid_email">Entered email is invalid</string>
+    <string name="login_invalid_password">Entered password is invalid</string>
+    <string name="unknown_error">Unknown error occurred</string>
+    <string name="dialog_info">Info</string>
+    <string name="ok">OK</string>
+    <string name="register_password_weak">Please enter a stronger password (min 6 characters)</string>
+    <string name="register_password_match">Entered password do not match</string>
+    <string name="reset_account_not_found">Account with entered email address not found</string>
+    <string name="splash_desc">Get the job done easily!</string>
+    <string name="onboarding_page_1_desc">We will help you access any services you need.</string>
+    <string name="onboarding_page_1_title">Let\'s start!</string>
+    <string name="register_email_collision">Entered email is already used</string>
+    <string name="network_connection">Operation failed. Please check your internet connection.</string>
+    <string name="login_user_not_found">The user with entered email address is not registered</string>
+    <string name="home_search">Search for a service</string>
+</resources>

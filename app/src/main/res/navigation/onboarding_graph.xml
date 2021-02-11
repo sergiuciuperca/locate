@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboarding_graph"
+    app:startDestination="@id/navigation_onboarding">
+    <fragment
+        android:id="@+id/navigation_onboarding"
+        android:name="ro.sc.test.locate.onboarding.OnboardingFragment"
+        android:label="@string/onboarding">
+        <deepLink app:uri="app:locate://onboarding" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="ro.sc.test.locate.login.LoginFragment"
+        android:label="@string/login">
+        <deepLink app:uri="app:locate://login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="ro.sc.test.locate.register.RegisterFragment"
+        android:label="@string/register">
+        <deepLink app:uri="app:locate://register" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_reset_password"
+        android:name="ro.sc.test.locate.reset.ResetPasswordFragment"
+        android:label="@string/reset_password">
+        <deepLink app:uri="app:locate://reset-password" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_success"
+        android:name="ro.sc.test.locate.success.SuccessFragment"
+        android:label="@string/success">
+        <argument
+            android:name="is_reset"
+            app:argType="boolean" />
+        <deepLink app:uri="app:locate://success/{is_reset}" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_button">54dp</dimen>
+    <dimen name="margin_textfield">34dp</dimen>
+    <dimen name="margin_label">13dp</dimen>
+    <dimen name="margin_input_vertical">52dp</dimen>
+    <dimen name="margin_top_info">32dp</dimen>
+    <dimen name="margin_bottom_onboarding">32dp</dimen>
+    <dimen name="home_img_size">72dp</dimen>
+    <dimen name="item_home_margin_22dp">22dp</dimen>
+    <dimen name="item_home_margin_18dp">18dp</dimen>
+    <dimen name="img_size_star">14dp</dimen>
+    <dimen name="item_home_margin_8dp">8dp</dimen>
+    <dimen name="item_home_margin_12dp">12dp</dimen>
+    <dimen name="item_home_corner">14dp</dimen>
+    <dimen name="home_margin_20dp">20dp</dimen>
+    <dimen name="height_input_onboarding">61dp</dimen>
+    <dimen name="margin_register_bottom">119dp</dimen>
+</resources>
