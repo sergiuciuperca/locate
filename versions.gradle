@@ -6,7 +6,7 @@ def versions = [
 ]
 ext.Versions = versions
 
-libs.androidGradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha05"
+libs.androidGradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha06"
 
 libs.Google = [
         playServicesPlugin: 'com.google.gms:google-services:4.3.5',

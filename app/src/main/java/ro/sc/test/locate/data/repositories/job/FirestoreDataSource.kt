@@ -23,16 +23,19 @@ class FirestoreDataSource @Inject constructor(
     }
 
     private fun parseJobDocuments(documents: List<DocumentSnapshot>): List<HomeItemData> {
-        return documents.map { doc ->
-            HomeItemData(
-                doc.id.hashCode().toLong(),
-                doc.data?.getValue("title") as? String ?: "",
-                doc.data?.getValue("image") as? String ?: "",
-                (doc.data?.getValue("stars") as? Number ?: 0).toInt(),
-                doc.data?.getValue("time") as? String ?: "",
-                doc.data?.getValue("price") as? String ?: "",
-                doc.data?.getValue("info") as? String ?: ""
-            )
+        return documents.mapNotNull { doc ->
+            doc.data?.let { data ->
+                HomeItemData(
+                    doc.id.hashCode().toLong(),
+                    data["title"] as? String ?: "",
+                    data["image"] as? String ?: "",
+                    (data["stars"] as? Number ?: 0).toInt(),
+                    data["time"] as? String ?: "",
+                    data["price"] as? String ?: "",
+                    data["info"] as? String ?: ""
+                )
+            }
+
         }
     }
 }

@@ -5,9 +5,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import ro.sc.test.locate.ReduxViewModel
-import ro.sc.test.locate.data.entities.ui.HomeItemData
 import ro.sc.test.locate.domain.HomeItemsUseCase
-import ro.sc.test.locate.login.LoginAction
 import javax.inject.Inject
 
 @HiltViewModel
